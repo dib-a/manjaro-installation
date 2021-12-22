@@ -23,4 +23,4 @@ swapon -L SWAP
 basestrap /mnt base linux510 dhcpcd networkmanager grub mkinitcpio efibootmgr git vim yakuake sudo
 pacman-mirrors --geoip && pacman -Syyu
 
-manjaro-chroot /mnt /bin/bash
+manjaro-chroot /mnt
