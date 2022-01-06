@@ -10,7 +10,7 @@ hwclock --systohc --utc
 echo pc > /etc/hostname
 passwd
 #vim /etc/sudoers
-cp /src/sudoers /etc/sudoers
+cp src/sudoers /etc/sudoers
 
 systemctl enable dhcpcd
 systemctl enable NetworkManager
@@ -22,7 +22,7 @@ mkinitcpio -P
 
 grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=manjaro --recheck
 #vim /etc/default/grub
-cp /src/grub /etc/default/grub
+cp src/grub /etc/default/grub
 grub-mkconfig -o /boot/grub/grub.cfg
 
 exit
