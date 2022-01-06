@@ -20,7 +20,7 @@ mkdir /mnt/boot/efi
 mount -L EFI /mnt/boot/efi
 swapon -L SWAP
 
-basestrap /mnt base linux510 dhcpcd networkmanager grub mkinitcpio efibootmgr git vim yakuake sudo
+basestrap /mnt base linux510 dhcpcd networkmanager grub mkinitcpio efibootmgr git vim sudo
 pacman-mirrors --geoip && pacman -Syyu
 
 manjaro-chroot /mnt
