@@ -3,7 +3,6 @@
 #keep in mind to run su to become sudo before starting the script 
 
 pacman-mirrors --geoip && sudo pacman -Syyu
-systemctl enable --now systemd-timesyncd
 
 cfdisk /dev/sda
 mkfs.vfat -F 32 -n EFI /dev/sda1
@@ -20,7 +19,7 @@ mkdir /mnt/boot/efi
 mount -L EFI /mnt/boot/efi
 swapon -L SWAP
 
-basestrap /mnt base linux510 dhcpcd networkmanager grub mkinitcpio efibootmgr git vim sudo
+basestrap /mnt base linux510 dhcpcd grub mkinitcpio efibootmgr git vim sudo
 pacman-mirrors --geoip && pacman -Syyu
 
 manjaro-chroot /mnt
