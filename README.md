@@ -31,7 +31,7 @@ In this example it will be:
 |/dev/sda3|all left|SYSTEM|
 |/dev/sda4|8 GB| SWAP
 
-Make the file system and crypt the ```SYSTEM```:
+Make the file system and encrypted the ```SYSTEM```:
 ```bash
 mkfs.vfat -F 32 -n EFI /dev/sda1
 mkfs.ext4 -L BOOT /dev/sda2
