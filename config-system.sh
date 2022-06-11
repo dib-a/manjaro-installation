@@ -1,5 +1,7 @@
 #!/bin/bash
 
+pacman-mirrors --geoip
+
 #vim /etc/locale.gen
 cp src/locale.gen /etc/locale.gen
 locale-gen
