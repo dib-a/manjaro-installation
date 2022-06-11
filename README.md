@@ -1,4 +1,4 @@
-# Manjaro Installation (minimal and crypted)
+# Manjaro Installation (minimal and encrypted)
 Manjaro out of the box containes to much things that I do not use, so I decided to write my own script to install manajro
 
 0. Run su to become the superuser and get full control over the system
