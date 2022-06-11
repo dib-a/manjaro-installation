@@ -2,7 +2,7 @@
 
 #keep in mind to run su to become sudo before starting the script 
 
-pacman-mirrors --geoip && sudo pacman -Syyu
+pacman-mirrors --geoip
 
 cfdisk /dev/sda
 mkfs.vfat -F 32 -n EFI /dev/sda1
@@ -20,6 +20,5 @@ mount -L EFI /mnt/boot/efi
 swapon -L SWAP
 
 basestrap /mnt base linux510 dhcpcd grub mkinitcpio efibootmgr git vim sudo
-pacman-mirrors --geoip && pacman -Syyu
 
 manjaro-chroot /mnt
