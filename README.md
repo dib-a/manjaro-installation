@@ -8,10 +8,10 @@ su
 
 You have to ```clone the repository``` and run ```bash ```install-system.sh or do it yourself as explained bellow:
 
-1. Update the mirrorlist, the system and the time:
+1. Update the mirrorlist and the time:
 
 ```bash
-pacman-mirrors --geoip && sudo pacman -Syyu
+pacman-mirrors --geoip
 systemctl enable --now systemd-timesyncd
 ```
 
