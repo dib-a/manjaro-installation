@@ -94,7 +94,7 @@ mkinitcpio -P
 Setup the grub:
 ```bash
 grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=manjaro --recheck
-vim /etc/default/gtrub
+vim /etc/default/grub
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
